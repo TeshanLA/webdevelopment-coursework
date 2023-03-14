@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query Form</title>
+    <script src="../scripts/forms.js"></script>
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+        
+</head>
+<body>
+    <!-- navbar -->
+    <div class="nav">
+        <a class="logo" href="main.html"><img class="image-logo" src="images/logo.jpeg" alt="logo image" /></a>
+        <a class="anchor" href="main.html">Home</a>
+        <a class="anchor" href="Product.html" target="_blank">Products</a>
+        <a class="anchor" href="forms.html">Query</a>
+        <a class="anchor" href="Quiz.html">Quiz</a>
+        <a class="anchor" href="SiteMap.html">Site Map</a>
+
+        <div class="dropdown">
+          <a class="dropbtn">Others</a>
+          <div class="dropdown-content">
+            <a class="anchor1" href="Member.html">Creator's page</a>
+            <a class="anchor1" href="newthumbnail.html">Additional contents</a>
+          </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <form id="q_form" method="post" action="mailto:danishkar.20210779@iit.ac.lk">
+        <h1 class="form-title">Query Form</h1>
+        <!-- first name input field -->
+        <div id="one">
+            <label for="firstname" class="firstname">First Name:</label><br>
+            <input type="text" name="firstnames" id="firstname">
+        </div>
+        <!-- last name input field -->
+        <div>
+            <label for="lastname" class="lastname">Last Name:</label><br>
+            <input type="text" name="lastnames" id="lastname"><br>
+        </div>
+        <!-- emial input field -->
+        <div>
+            <label for="email" class="email">Email:</label><br>
+            <input type="email" name="email" id="email"><br>
+        </div>
+        <!-- radio buttons -->
+        <div>
+            <label class="subject">Subject:</label><br>
+            <input type="radio" class = "deli" name="subject" id="del" value="Delivery Duration">
+            <label for="del" class="del">Delivery Duration</label><br>
+            <input type="radio" name="subject" id="o_ship" value="Overseas Shipping">
+            <label for="o_ship" class="o_ship">Overseas Shipping</label><br>
+            <input type="radio" name="subject" id="pay" value="Payment">
+            <label for="pay" class="pay">Payment</label><br>
+        </div>
+        <!-- details -->
+        <div>
+            <label for="det" class="details">Details:</label><br>
+            <textarea name="details" id="det" rows="6" cols="47"></textarea>
+        </div>
+        <input type="button" class ="viewq" value="View Query" onclick="validation(this.form)">
+    </form>
+    <div id="brief">
+        <h2 class="brief-title">Details</h2>
+        <div class="one">
+            <p class="p-tag">First name: </p>
+            <span id="FIRSTNAME"></span>
+        </div>
+        <div class="two">
+            <p class="p-tag">Last name: </p>
+            <span id="LASTNAME"></span>
+        </div>
+        <hr class="line">
+        <div class="three">
+            <p class="p-tag">Email: </p>
+            <span id="EMAIL"></span>
+        </div>
+        <hr class="line">
+        <div class="four">
+            <p class="p-tag">Subject: </p>
+            <span id="SUBJECT"></span>
+        </div>
+        <hr class="line">
+        <div class="five">
+            <p class="p-tag">Details: </p>
+            <span id="DETAILS"></span>
+        </div>
+        <hr class="line">
+        <input type="button" class="edit" value="Edit" onclick="displayChangesToForm()">
+        <input type="submit" class="submit" value="Submit" form="q_form" onclick="displayChangesToForm()">
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-contents">
+            <div class="block-one">
+                <h2>About <span style="color: rgb(255, 0, 0);">ALL STARS</span></h2>
+                <p>All the Gender can be a member of this Club.</p>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">place</span> GP Square,Bambalapitiya</p>
+                <P><span class="material-icons" style="color: white; margin-right: 5px;">email</span> info@allstars.com</P>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">call</span> +94-702828400</p>
+            </div>
+            <form class="feedback" method="post" action="mailto:danishkar.20210779@iit.ac.lk">
+                <h2>Give your valuable feedback</h2>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emails" required>
+                <textarea class="textarea" rows="4" cols="78" placeholder="Feedback" required></textarea>
+                <input type="submit" value="Send" class="send">
+            </form>
+            <hr class="v-line">
+        </div>
+    </div>
+    <!-- footer -->
+</body>
+</html>

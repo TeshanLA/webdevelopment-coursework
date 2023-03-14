@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body{
+    margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+.nav{
+    overflow: hidden;
+    background-color: rgb(14, 14, 14);
+}
+.nav .anchor ,.nav .anchor1, .nav .dropbtn{   /* styling for all anchor tags */
+    float: left;
+    text-align: center;
+    padding: 15px 16px 15px 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+.dropdown{       /* styling for dropdown menu */
+    float: right;
+    overflow: hidden;
+} 
+.dropbtn{     /* styling for the others button */
+    cursor: pointer;
+}
+.logo{
+    padding:0%;
+    float: left;
+    height: 62px;
+    width: auto;
+}
+.image-logo{
+    height:62px;
+    width: auto;
+}
+.dropdown .dropbtn{
+    color: rgb(255, 255, 255);
+    font-size: 20px;  
+    border: none;
+    padding: 15px 16px 15px 16px;
+    outline: none;
+    background-color: rgb(14, 14, 14);
+
+}
+.dropdown:hover .dropbtn,.nav .anchor:hover{ /* styling when the buttons are hovered */
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 251, 0);
+    border-bottom: 3px solid rgb(255, 251, 0);
+}
+.dropdown-content{
+    display: none;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 64px;
+    right:2px;
+    min-width: 160px;
+    background-color: rgb(14, 14, 14);
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content .anchor1 {  /* styling for the others contents anchor tags */
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.dropdown-content .anchor1:hover {  /* styling to display the others content only when hovered */
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 251, 0);
+    border-bottom: 3px solid rgb(255, 251, 0);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
