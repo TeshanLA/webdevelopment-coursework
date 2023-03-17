@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Products</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/products.css">
+</head>
+
+<body>
+    <div class="nav">
+        <a class="logo" href="main.html"><img class="image-logo" src="../images/logo.jpeg" alt="logo image"></a>
+        <a class="anchor" href="main.html">Home</a>
+        <a class="anchor" href="products.html">Products</a>
+        <a class="anchor" href="#">Query</a>
+        <a class="anchor" href="#">Quiz</a>
+        <div class="dropdown">
+            <a class="dropbtn">Others</a>
+            <div class="dropdown-content">
+                <a class="anchor1" href="#">Site Map</a>
+                <a class="anchor1" href="#">Creator's page</a>
+                <a class="anchor1" href="newthumbnail.html">Additional contents</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main-overlay-inactive">
+            <div class="container">
+                <div class="header">
+                    <h3 class="heading">Shopping Cart</h3>
+                    <h5 class="action">Remove all</h5>
+                </div>
+                <div class="cart-item">
+                    <div class="img-box">
+                        <img src="../images/products/items-images/headbandimg.jpg" class="cart-item-img"
+                            alt="description">
+                    </div>
+                    <div class="about">
+                        <div class="main-title">Lightweight Headband</div>
+                        <div class="sub">Headband for men and women</div>
+                    </div>
+                    <div class="counter">
+                        <div class="inc">+</div>
+                        <div class="count">2</div>
+                        <div class="dec">-</div>
+                    </div>
+                    <div class="sizes">
+                        <label for="size">Size:</label>
+                        <select>
+                            <option value="1">Small</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Large</option>
+                            <option value="4">X-Large</option>
+                            <option value="5">XXL</option>
+                        </select>
+                    </div>
+                    <div class="prices">
+                        <div class="amount">$4.25</div>
+                        <div class="remove-item"><u>Remove Item</u></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="checkout-details">
+                    <div class="total">
+                        <div>
+                            <div class="subtotal">SubTotal</div>
+                            <div class="items">2 Items</div>
+                        </div>
+                        <div class="total-amont">$4.25</div>
+                    </div>
+                    <div class="checkout-btn">
+                        <span><button id="close" class="btn">Close</button></span>
+                        <span><button id="proceed" class="btn">Checkout</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="catogories">
+            <div id="buttons">
+                <ul id="catogory-list">
+                    <button class="catogory"><img class="icon" src="../images/products/new.png" alt="icon"> New
+                        Arrivals <img src="../images/products/arrow.png" class="arrow icon" alt="arro"></button>
+                    <button class="catogory"><img class="icon" src="../images/products/sportswear.png" alt="icon">
+                        Sports Wear <img src="../images/products/arrow.png" class="arrow icon" alt="arro"></button>
+                    <button class="catogory"><img class="icon" src="../images/products/eqipments.png" alt="icon">
+                        Equipments <img src="../images/products/arrow.png" class="arrow icon" alt="arro"></button>
+                    <button class="catogory"><img class="icon" src="../images/products/team.png" alt="icon">
+                        Team
+                        Sports <img src="../images/products/arrow.png" class="arrow icon" alt="arro"></button>
+                    <button class="catogory"><img class="icon" src="../images/products/safety.png" alt="icon">
+                        Safety
+                        Equipments <img src="../images/products/arrow.png" class="arrow icon" alt="arro"></button>
+                </ul>
+                <button id="cart"><img src="../images/products/cart.png" class="cart-img" alt="cart"> Shopping
+                    Cart</button>
+            </div>
+        </div>
+        <div id="items">
+            <div class="item">
+                <div class="overlay">
+                    <button class="add">Add to Cart</button>
+                    <div class="rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <img src="../images/products/items-images/headbandimg.jpg" alt="headband" class="item-image">
+                <div class="heading">Lightweight Headband</div>
+                <div class="description">Headbands for Men and Women Sports Hairband Lightweight with 20%
+                    discount</div>
+                <div class="price">$ 4.25</div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-contents">
+            <div class="block-one">
+                <h2>About <span style="color: rgb(255, 0, 0);">ALL STARS</span></h2>
+                <p>All the Gender can be a member of this Club.</p>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">place</span> GP
+                    Square,Bambalapitiya</p>
+                <P><span class="material-icons" style="color: white; margin-right: 5px;">email</span>
+                    info@allstars.com
+                </P>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">call</span> +94-702828400
+                </p>
+            </div>
+            <form class="feedback" method="post" action="mailto:danishkar.20210779@iit.ac.lk">
+                <h2>Give your valuable feedback</h2>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emails" required>
+                <textarea class="textarea" rows="4" cols="78" placeholder="Feedback" required></textarea>
+                <input type="submit" value="Send" class="send">
+            </form>
+            <hr class="v-line">
+        </div>
+    </div>
+    <script src="../scripts/productPageScript.js"></script>
+</body>
+
+</html>
