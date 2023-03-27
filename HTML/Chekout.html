@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="icon" type="image/jpeg" href="../images/checkout/title-bar-image.png">
+    <link rel="stylesheet" href="../styles/checkout.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="details">
+            <h1 id="title">Checkout</h1>
+            <div class="step">
+                <div class="step-icon">1</div>
+                <div class="st-text">Billing Details</div>
+            </div>
+            <form id="bil-details">
+                <div class=" form-container">
+                    <div>
+                        <label for="fname" class="inputs">First Name<sup>*</sup></label>
+                        <input type="text" name="fname" id="fname" class="inputs text" required>
+                    </div>
+                    <div>
+                        <label for="lname" class="inputs">Last Name<sup>*</sup></label>
+                        <input type="text" name="lname" id="lname" class="inputs text" required>
+                    </div>
+                    <div>
+                        <label for="address" class="inputs">Address<sup>*</sup></label>
+                        <input type="text" name="adress" id="address" class="inputs text" required>
+                    </div>
+                    <div id="countries">
+                        <label for="country" class="inputs">Country<sup>*</sup></label>
+                        <div id="img-cont-select">
+                            <div>
+                                <img class="country-img" src="../images/checkout/srilanka.png" alt="sl">
+                            </div>
+                            <select name="country" id="country" class="inputs">
+                                <option value="SL">Sri Lanka</option>
+                                <option value="IN">India</option>
+                                <option value="JP">Japan</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="US">United states</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="city" class="inputs">City<sup>*</sup></label>
+                        <input type="text" name="city" id="city" class="inputs text" required>
+                    </div>
+                    <div>
+                        <label for="postal" class="inputs">Postal Code<sup>*</sup></label>
+                        <input type="text" name="postal" id="postal" class="inputs text" required>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </form>
+            <div class="step">
+                <div class="step-icon">2</div>
+                <div class="st-text">Payment Method</div>
+            </div>
+            <div id="bank-cards">
+                <img class="bank-card " src="../images/checkout/visa.png">
+                <img class="bank-card" src="../images/checkout/mastercard.png">
+                <img class="bank-card" src="../images/checkout/amex.png">
+                <img class="bank-card" src="../images/checkout/paypal.png">
+                <div id="accepted-text">Accepted</div>
+            </div>
+            <form id="payment-details" onsubmit="event.preventDefault();">
+                <div class="form-container">
+                    <div>
+                        <label for="nOnCard" class="inputs extend">Name on Card<sup>*</sup></label>
+                        <input type="text" name="nOnCard" id="nOnCard" class="inputs text" required>
+                    </div>
+                    <div>
+                        <label for="cardNumber" class="inputs extend">Card Number<sup>*</sup></label>
+                        <input type="text" name="cardNumber" id="cardNumber" class="inputs text" required>
+                    </div>
+                    <div>
+                        <label for="expDate" class="inputs extend">Expire Date<sup>*</sup></label>
+                        <input type="month" name="expDate" id="expDate" class="inputs text" required>
+                    </div>
+                    <div>
+                        <label for="cvv" class="inputs">CVV<sup>*</sup></label>
+                        <input type="text" name="cvv" id="cvv" class="inputs text" required>
+                    </div>
+                </div>
+            </form>
+            <div id="submit-form">
+                <button id="sub-btn" type="submit">Pay Now!</button>
+                <button id="Cancel-btn">Cancel</button>
+            </div>
+        </div>
+        <div id="summery">
+            <div id="order-summery">
+                <h3 class="mini-caption">Your Order</h3>
+                <hr id="margin">
+                <div class="item-container">
+                    <img class="item-container-image" src="../images/products/items-images/bike-phone-holder.jpg">
+                    <div class="item-container-details">
+                        <div class="container-detail-header">
+                            Phone Holder
+                        </div>
+                        <div class="container-detail-attr">
+                            <div class="attr-key">Size</div>
+                            <div class="attr-value">XL</div>
+                        </div>
+                        <div>
+                            <div class="item-price">
+                                $39.00
+                            </div>
+                            <div class="num-of-items">
+                                × 02
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="costs">
+                    <div id="delivery">Delivery</div>
+                    <div class="cost">
+                        <div class="amount">$10</div>
+                        <div id="delivery-method">
+                            Express
+                        </div>
+                    </div>
+                </div>
+                <div class="costs">
+                    <div id="delivery">Discount</div>
+                    <div class="cost">
+                        <div class="amount">-$10</div>
+                    </div>
+                </div>
+                <hr />
+                <div id="total">
+                    <div id="total-label">Total</div>
+                    <div id="total-amount">$110.00</div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="../scripts/checkout.js"></script>
+
+</html>
