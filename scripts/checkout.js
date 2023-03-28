@@ -132,11 +132,142 @@ const billDetailsForm = document.querySelector("#bil-details");
 const paymentDetails = document.querySelector("#payment-details");
 
 
+//input validation
+function validation() {
+    let hasError = false;
+    //regular exprression for check numbers only in input field
+    const numbers = /^[0-9]+$/;
+
+    const formBilDetails = document.getElementById("bil-details");
+    const paymentDetails = document.getElementById("payment-details");
+
+    //check input fields
+    let fName = formBilDetails.elements['fname'].value;
+    let errorFname = document.createElement("div");
+    errorFname.classList.add("error");
+    if (fName == "") {
+        hasError = true;
+        errorFname.innerText = "First-Name Required"
+        document.querySelector("#fname").after(errorFname);
+    }
+
+    let lname = formBilDetails.elements['lname'].value;
+    let errorLname = document.createElement("div");
+    errorLname.classList.add("error");
+    if (lname == "") {
+        hasError = true;
+        errorLname.innerText = "Last-Name Required"
+        document.querySelector("#lname").after(errorLname);
+    }
+
+    let address = formBilDetails.elements['adress'].value;
+    let errorAddress = document.createElement("div");
+    errorAddress.classList.add("error");
+    if (address == "") {
+        hasError = true;
+        errorAddress.innerText = "Address Required"
+        document.querySelector("#address").after(errorAddress);
+    }
+
+    let city = formBilDetails.elements['city'].value;
+    let errorCity = document.createElement("div");
+    errorCity.classList.add("error");
+    if (city == "") {
+        hasError = true;
+        errorCity.innerText = "City Required"
+        document.querySelector("#city").after(errorCity);
+    }
+
+    let postalCode = formBilDetails.elements['postal'].value;
+    let errorPostal = document.createElement("div");
+    errorPostal.classList.add("error");
+    if (postalCode == "") {
+        hasError = true;
+        errorPostal.innerText = "Postal Code Required"
+        document.querySelector("#postal").after(errorPostal);
+    } else if (postalCode.match(numbers) == null) {
+        hasError = true;
+        errorPostal.innerText = "Invalid Postal Code";
+        document.querySelector("#postal").after(errorPostal);
+    }
+
+    let nameONCard = paymentDetails.elements['nOnCard'].value;
+    let errorNameONCardNumber = document.createElement("div");
+    errorNameONCardNumber.classList.add("error");
+    if (nameONCard == "") {
+        hasError = true;
+        errorNameONCardNumber.innerText = "Card Holders Name Required";
+        document.querySelector("#nOnCard").after(errorNameONCardNumber);
+    }
+
+    let cardNumber = paymentDetails.elements['cardNumber'].value;
+    let errorCardNumber = document.createElement("div");
+    errorCardNumber.classList.add("error");
+    if (cardNumber == "") {
+        hasError = true;
+        errorCardNumber.innerText = "Card Number Required"
+        document.querySelector("#cardNumber").after(errorCardNumber);
+    } else if (cardNumber.match(numbers) == null) {
+        hasError = true;
+        errorCardNumber.innerText = "Invalid format of card number";
+        document.querySelector("#cardNumber").after(errorCardNumber);
+    }
+
+    let expDate = paymentDetails.elements['expDate'].value;
+    let errorExpDate = document.createElement("div");
+    errorExpDate.classList.add("error");
+    if (new Date(expDate) <= new Date()) {
+        hasError = true;
+        errorExpDate.innerText = "Card Expired"
+        document.querySelector("#expDate").after(errorExpDate);
+    }
+
+    let cvv = paymentDetails.elements['cvv'].value;
+    let errorCVV = document.createElement("div");
+    errorCVV.classList.add("error");
+    if (cvv == "") {
+        hasError = true;
+        errorCVV.innerText = "CVV Number Required"
+        document.querySelector("#cvv").after(errorCVV);
+    } else if (cvv.match(numbers) == null) {
+        hasError = true;
+        errorCVV.innerText = "Invalid format of CVV number";
+        document.querySelector("#cvv").after(errorCVV);
+    }
+
+    if (!hasError) {
+        alert("Payment succesfull");
+        window.location.href = "../HTML/main.html";
+        localStorage.clear();
+    }
+
+
+}
+
+//submit on enter
+addEventListener("keyup", function (e) {
+    e.preventDefault();
+    if (e.key == "Enter") {
+        let temp = document.querySelectorAll(".error");
+        if (temp.length > 0) {
+            temp.forEach(element => {
+                element.remove();
+            })
+        }
+        validation();
+    }
+});
+
 //submit button
 const submitBtn = document.querySelector("#sub-btn");
-
-submitBtn.addEventListener("click", function (e) {
-
+submitBtn.addEventListener("click", function () {
+    let temp = document.querySelectorAll(".error");
+    if (temp.length > 0) {
+        temp.forEach(element => {
+            element.remove();
+        })
+    }
+    validation();
 });
 
 //cancle button
