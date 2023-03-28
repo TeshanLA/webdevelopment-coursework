@@ -367,6 +367,7 @@ hr {
 
 .error {
     color: red;
+    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
