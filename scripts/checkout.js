@@ -103,8 +103,14 @@ function calculateTotal(discount, fee, total, method) {
 
 }
 
-createOrder(orderSummary);
-calculateTotal(stateOfValues.discount, stateOfValues.deliveryFee, stateOfValues.totalWithoutDisc, stateOfValues.deliveryMethod);
+if (orderSummary == null) {
+    alert("Empty shoppin cart")
+    document.querySelector("#sub-btn").disabled = true;
+} else {
+    createOrder(orderSummary);
+    calculateTotal(stateOfValues.discount, stateOfValues.deliveryFee, stateOfValues.totalWithoutDisc, stateOfValues.deliveryMethod);
+
+}
 
 
 
@@ -137,8 +143,10 @@ function validation() {
     let hasError = false;
     //regular exprression for check numbers only in input field
     const numbers = /^[0-9]+$/;
+    const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
     const formBilDetails = document.getElementById("bil-details");
+    const formContactDetails = document.getElementById("contact-details");
     const paymentDetails = document.getElementById("payment-details");
 
     //check input fields
@@ -235,6 +243,26 @@ function validation() {
         document.querySelector("#cvv").after(errorCVV);
     }
 
+    let conNumber = formContactDetails.elements['contact'].value;
+    let errorConNum = document.createElement("div");
+    errorConNum.classList.add("error");
+    if (conNumber == "") {
+        hasError = true;
+        errorConNum.innerText = "Contact Number Required";
+        document.querySelector("#contact").after(errorConNum)
+    }
+
+    let email = formContactDetails.elements['email'].value;
+    let errorEmail = document.createElement("div");
+    errorEmail.classList.add("error");
+    if (email.match(emailPattern) == null) {
+        hasError = true;
+        errorEmail.innerText = "Invalid Email Address";
+        document.querySelector("#email").after(errorEmail)
+    }
+
+
+
     if (!hasError) {
         alert("Payment succesfull");
         window.location.href = "../HTML/main.html";
@@ -244,19 +272,22 @@ function validation() {
 
 }
 
-//submit on enter
-addEventListener("keyup", function (e) {
-    e.preventDefault();
-    if (e.key == "Enter") {
-        let temp = document.querySelectorAll(".error");
-        if (temp.length > 0) {
-            temp.forEach(element => {
-                element.remove();
-            })
+//submit on enter if cart is not empty
+if (!(orderSummary == null)) {
+    window.addEventListener("keyup", function (e) {
+        e.preventDefault();
+        if (e.key == "Enter") {
+            let temp = document.querySelectorAll(".error");
+            if (temp.length > 0) {
+                temp.forEach(element => {
+                    element.remove();
+                })
+            }
+            validation();
         }
-        validation();
-    }
-});
+    });
+}
+
 
 //submit button
 const submitBtn = document.querySelector("#sub-btn");

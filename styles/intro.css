@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+
+* {
+    font-family: 'Open Sans', 'Courier New', Courier, monospace;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+@keyframes upAndSmall {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        top: 1%;
+        transform: scale(0.7, 0.7);
+    }
+}
+
+@keyframes fadeinUp {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        top: 28%;
+    }
+
+    100% {
+        opacity: 0;
+        top: 28%;
+    }
+}
+
+@keyframes slide {
+    from {
+        opacity: 00;
+    }
+
+    to {
+        position: static;
+        opacity: 1;
+    }
+}
+
+@keyframes simpleFade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        top: 47%;
+    }
+
+    100% {
+        opacity: 0;
+        top: 47%;
+    }
+}
+
+@keyframes fadeInWithColor {
+    0% {
+        opacity: 0;
+        color: aliceblue;
+    }
+
+    50% {
+        opacity: 0.4;
+        color: rgb(245, 220, 191);
+    }
+
+    100% {
+        opacity: 1;
+        color: rgb(214, 166, 108);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        left: -150px;
+        color: white;
+    }
+
+    100% {
+        opacity: 1;
+        left: 350px;
+        color: rgb(219, 168, 100);
+    }
+
+}
+
+.background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: #2e3164; */
+    background-image: url("../images/splashback.jpg");
+}
+
+.image-cont {
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    left: 43.5%;
+    width: 500px;
+    height: 500px;
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+
+.image-cont-up {
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    left: 43.5%;
+    animation-name: upAndSmall;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* .name {
+    opacity: 1;
+    position: absolute;
+    top: 60%;
+    left: 43.5%;
+} */
+
+.name {
+    font-size: 80px;
+    font-weight: 900;
+    color: rgb(238, 206, 163);
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    animation-name: fadeinUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-delay: 0.9s;
+}
+
+.sub-discription {
+    opacity: 0;
+    color: rgb(216, 190, 157);
+    position: absolute;
+    font-size: 40px;
+    font-style: italic;
+    font-family: "Alkatra";
+    top: 75%;
+    left: 42%;
+}
+
+.sub-discription-active {
+    color: rgb(216, 190, 157);
+    position: absolute;
+    font-size: 40px;
+    font-style: italic;
+    font-family: "Alkatra";
+    top: 75%;
+    left: 42%;
+    animation-name: simpleFade;
+    animation-duration: 4.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.welcome {
+    opacity: 0;
+    font-size: 100px;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    left: 470px;
+    top: 200px;
+}
+
+.welcome-active {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    left: 470px;
+    top: 200px;
+    animation-name: fadeInWithColor;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.discription {
+    position: absolute;
+    opacity: 0;
+    top: 300px;
+    left: -100px;
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Alkatra';
+}
+
+.discription-active {
+    position: absolute;
+    top: 300px;
+    font-size: 60px;
+    font-weight: 200;
+    font-family: 'Alkatra';
+    animation-name: slideRight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.icon {
+    position: absolute;
+    visibility: hidden;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    left: 45%;
+}
+
+.icon-active {
+    position: absolute;
+    visibility: visible;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    left: 45%;
+}
+
+.members {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.members-detail {
+    display: flex;
+    column-gap: 50px;
+    justify-content: space-between;
+}
+
+.header {
+    opacity: 0;
+    font-size: 40px;
+    color: rgb(226, 206, 90);
+    font-weight: 800;
+}
+
+.header-active {
+    font-size: 40px;
+    color: rgb(226, 206, 90);
+    font-weight: 800;
+    animation-name: fadeIn;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.st-name {
+    font-size: 20px;
+    color: rgba(235, 205, 168, 0.897);
+    font-weight: 200;
+    font-family: 'Alkatra', Courier, 'New Courier', monospace;
+}
+
+.st-num {
+    opacity: 1;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(247, 215, 177, 0.774);
+    font-weight: 200;
+}
+
+.student {
+    opacity: 0;
+    position: relative;
+    left: -40px;
+}
+
+.student-active {
+    animation-name: slide;
+    animation-timing-function: ease-out;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}

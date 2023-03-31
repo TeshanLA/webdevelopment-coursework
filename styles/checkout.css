@@ -16,7 +16,6 @@ body {
     display: flex;
     width: 80%;
     min-height: 120vh;
-    background-color: rgba(243, 245, 247, 0.904);
     border-radius: 15px;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -96,17 +95,16 @@ form {
 .inputs {
     display: block;
     margin-bottom: 5px;
-
 }
 
 .extend {
-    width: 120px;
+    width: 140px;
 }
 
 label {
     font-size: medium;
     font-weight: 600;
-    width: 100px;
+    width: 120px;
 }
 
 .text {
@@ -183,7 +181,8 @@ select {
 }
 
 #nOnCard,
-#cardNumber {
+#cardNumber,
+#email {
     width: 110%;
 }
 
