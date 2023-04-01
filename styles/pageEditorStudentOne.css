@@ -132,7 +132,7 @@ body {
     border: 0.7px solid white;
 }
 
-#footer {
+#mini-footer {
     margin: 35px 35% 35px 35%;
     display: flex;
     justify-content: space-evenly;
