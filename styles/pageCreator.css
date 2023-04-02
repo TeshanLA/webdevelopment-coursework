@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,300;1,300&family=Scope+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+}
+
+body {
+    background-color: #2e7d9c;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    color: #070707;
+    margin-top: 1.5rem;
+    border-bottom: 10px solid #e9eef0;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    color: aqua;
+    width: 50%;
+    margin-top: 2rem;
+    /* height: 30em; */
+    height: fit-content;
+    border-radius: 2em;
+    transition: 0.5s;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    height: 360px;
+    width: 300px;
+    overflow: hidden;
+    /* padding: 40px; */
+    border: 5px solid rgb(6, 6, 6);
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.socials {
+    position: relative;
+    right: 0;
+    margin-bottom: 10px;
+    border: #070707 solid;
+    border-radius: 10px;
+    background-color: #070707;
+
+}
+
+.scm {
+    position: relative;
+    transform: scale(2);
+    margin: 20px;
+}
+
+.profile:hover {
+    box-shadow: 5px 5px 20px #000,
+        5px -5px 40px #000,
+        -5px 5px 60px #000,
+        -5px -5px 80px #000,
+        0px 0px 100px #000;
+}
+
+.twitter {
+    cursor: pointer;
+    color: #14c0f0;
+    transition: 0.5s;
+}
+
+.instagram {
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.github {
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.lkd-in {
+    cursor: pointer;
+    color: #223878;
+    transition: 0.5s;
+
+}
+
+.twitter:hover,
+.instagram:hover,
+.lkd-in:hover,
+.github:hover {
+    transform: scale(3);
+}
+
+.name {
+    transition: 0.5s;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.name:hover,
+.posn:hover {
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+h5 {
+    color: #000;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 501px) {
+    .card-container {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 0px) {
+    .card-container {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.tasks {
+    margin-bottom: 200px;
+    margin-top: 50px;
+    width: 1200px;
+    min-height: 400px;
+    background-color: #084e65;
+}
+
+
+.tasks h2 {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 10px;
+    color: #070707;
+    font-size: 35px;
+    border-bottom: 10px solid #000;
+}
+
+.task {
+    width: 480px;
+    min-height: 300px;
+    margin-top: 40px;
+
+}
+
+.std3-tasks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.task1 {
+    margin-left: 80px;
+    margin-right: 40px;
+}
+
+.task2 {
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+.task3 {
+    margin-left: 80px;
+}
+
+
+.task-topic {
+    height: 60px;
+    background: #3c0202;
+    /* margin-top: 0; */
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.task-topic p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.link-page {
+    text-decoration: none;
+}

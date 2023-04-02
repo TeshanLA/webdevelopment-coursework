@@ -1,51 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* font */
 
-body{
-    background-color: #222831;
+body {
+    background-color: #ffffff;
     background-image: url(../images/forms-back-img.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Poppins", sans-serif;  
+    background-size: contain;
+    font-family: "Poppins", sans-serif;
 }
-/* start of styling for the form */
-#q_form{
-    width: 555px;
+
+/* start of s5yling for the form */
+#q_form {
+    width: 39%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 200px;
     position: relative;
-    top: 80px;
+    top: 8rem;
     font-size: 25px;
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 15px;
-    background-color: #4d4b4b;
+    background-color: #615e5e;
     border-radius: 15px;
     opacity: 0.8;
 }
 
-#one{          /* firstname's div tags */
-   float:left;
-   margin-right: 15px;
+#one {
+    float: left;
+    margin-right: 10px;
 }
-.form-title{
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -40px;
+    width: 526px;
+    background-color: rgb(208, 255, 0);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.form-title {
     text-align: center;
-    background-color:rgb(255, 251, 0);
+    background-color: rgb(208, 255, 0);
     margin: 0;
     font-size: 35px;
-    color:rgb(0, 0, 0);
-    margin-bottom: 15px;
-    border-radius: 0px 0px 15px 15px;
-    opacity: 1;
+    color: rgb(0, 0, 0);
 }
+
 br {
-    display: block; /* makes it have a width */
-    content: ""; 
-    margin-bottom: 10px; 
+    display: block;
+    /* makes it have a width */
+    content: "";
+    margin-bottom: 10px;
 }
-#firstname,#lastname,#email{      /*   styling for input tags */
+
+#email,
+.name {
+    /*   styling for input tags */
     color: #fdfdfd;
-    width: 255px;
+    width: 100%;
     height: 30px;
     outline: none;
     border: 2px solid rgb(151, 151, 151);
@@ -56,17 +71,26 @@ br {
     font-weight: bold;
     color: #fdfdfd;
 }
-#firstname:focus, #lastname:focus, #email:focus, #det:focus{   /*   styling for input tags when focused */
+
+#email:focus,
+#det:focus {
+    /*   styling for input tags when focused */
     border: 3px solid rgb(248, 248, 248);
 }
-#email{
-    width: 535px;
+
+.name,
+#email {
+    width: 100%;
+    height: 3rem;
 }
-input[type="radio"]{
+
+input[type="radio"] {
     width: 100px;
     height: 17px;
 }
-#det{                 /* styling for the textarea */
+
+#det {
+    /* styling for the textarea */
     color: #fdfdfd;
     outline: none;
     font-size: 15px;
@@ -79,14 +103,24 @@ input[type="radio"]{
     border-radius: 10px;
     padding-left: 6px;
 }
-.del, .o_ship, .pay{     /* radio buttons labels styling */
+
+.del,
+.o_ship,
+.pay {
+    /* radio buttons labels styling */
     color: #fffb25;
 }
-.firstname,.lastname, .email, .subject, .details{   /* styling for the forms sub-title */
+
+.email,
+.subject,
+.details {
+    /* styling for the forms sub-title */
     color: #ffffff;
 
 }
-.viewq{           /* styling for the View Query button */
+
+.viewq {
+    /* styling for the View Query button */
     font-weight: bolder;
     font-size: 18px;
     color: rgb(0, 0, 0);
@@ -103,88 +137,77 @@ input[type="radio"]{
     margin-left: 200px;
     opacity: 100;
 }
-.viewq:hover{
+
+.viewq:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(240, 255, 34);
     border: 2px solid rgb(240, 255, 34);
     font-size: 19px;
 }
+
 /* end of styling for the form */
-/* start of styling for the breif */
-#brief{
-    position: relative;
-    width: 555px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
-    background-color: #4d4b4b;
-    color: #ffffff;
-    font-size: 25px;
-    border-radius: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    opacity: 0.8;
-    margin-bottom: 100px;
-}
-.brief-title{
-    text-align: center;
-    margin-bottom: 8px;
-    margin-top: 0%;
-    border-radius: 0px 0px 15px 15px;
-    color: #000000;
-    background-color: #fffb25;
-    opacity: 1;
-}
-#FIRSTNAME,#LASTNAME,#EMAIL,#SUBJECT,#DETAILS{
-    font-size: 28px;
-    font-weight: 600;
-    text-decoration: underline;
-}
-.one{
-    float: left;
-    width:260px
-}
-.two{
-    margin-bottom: 10px;
-    width: 280px;
-    float: left;
-}
-.three{
-    width:530px;
-    margin-bottom: 10px;
-}
-.line{
-    clear: both;
-}
-.five{
-    width: 530px;
-}
-.p-tag{
-    color: #000000;
-    margin-bottom: 10px;
-}
-.edit, .submit{     /* styling for the edit and submit button */
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-weight: bolder;
+
+
+
+
+#rating {
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
     font-size: 18px;
-    color: rgb(0, 0, 0);
-    background-color: #fffb25;
-    outline: none;
-    border: 2px solid rgb(0, 0, 0);
-    border-radius: 18px 18px 18px 18px;
-    width: 100px;
-    height: 33px;
-    transition: 0.8s ease-in-out;
+    /* justify-content: space-around; */
 }
-.edit{
-    margin-left: 145px;
-    margin-right: 40px;
+
+
+#rating label {
+    margin-right: 1em;
+    width: 50px;
+
 }
-.edit:hover, .submit:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(240, 255, 34);
-    border: 2px solid rgb(240, 255, 34);
-    font-size: 19px;
+
+textarea {
+    height: 2em;
+}
+
+.submit {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.inputs {
+    display: grid;
+    margin-top: 20px;
+
+}
+
+input[type="radio"] {
+    width: 14px;
+    height: 17px;
+}
+
+#feedback-type {
+    height: 3rem;
+}
+
+input[type=text] {
+    height: 3rem;
+}
+
+textarea {
+    height: 8rem;
+}
+
+button {
+    height: 3rem;
+    border-radius: 13px;
+    background-color: yellow;
+    font-size: 1.25rem;
 }

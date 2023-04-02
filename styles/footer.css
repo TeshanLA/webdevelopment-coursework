@@ -1,45 +1,69 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-.footer{
+
+.footer {
     position: relative;
     top: auto;
     bottom: auto;
     width: 100%;
-    height: 265px;
+    height: 300px;
     background-color: rgb(48, 48, 48);
     font-family: "Poppins", sans-serif;
 }
-.footer-contents{
+
+.copyright {
+    text-align: center;
+    font-weight: bolder;
+    width: 80vw;
+    height: 7vh;
+    margin: auto;
+    top: 94vh;
+    left: 10vw;
+    background-color: #030303;
+    color: #fffcfc;
+    position: fixed;
+    left: calc(50vw - 480px);
+}
+
+.footer-contents {
     background-color: rgb(48, 48, 48);
 }
-.footer-contents .block-one{
+
+.footer-contents .block-one {
     float: left;
-    border-right: 2px solid rgb(255, 251, 0);
+    border-right: 2px solid rgb(255, 255, 255);
     padding-right: 100px;
     margin-left: 20px;
 }
-.footer-contents .block-one h2{
+
+.footer-contents .block-one h2 {
     color: rgb(255, 255, 255);
 }
-.footer-contents .block-one p{
+
+.footer-contents .block-one p {
     font-size: 15px;
     color: rgb(192, 192, 192);
 }
-.footer-contents .feedback{
+
+.footer-contents .feedback {
     float: left;
     width: 600px;
     padding-left: 20px;
-    
+
 }
-.footer-contents .feedback h2{
+
+.footer-contents .feedback h2 {
     color: rgb(255, 255, 255);
 }
-.footer-contents .feedback label{
+
+.footer-contents .feedback label {
     font-size: 15px;
     color: rgb(192, 192, 192);
 }
-#name,#emails{
-    width:210px;
+
+#name,
+#emails {
+    width: 210px;
     height: 25px;
     background-color: rgb(48, 48, 48);
     outline: none;
@@ -47,11 +71,13 @@
     border-radius: 10px;
     color: white;
 }
-#name{
+
+#name {
     margin-right: 40px;
     margin-bottom: 15px;
 }
-.textarea{
+
+.textarea {
     resize: none;
     background-color: rgb(48, 48, 48);
     outline: none;
@@ -60,7 +86,9 @@
     padding-left: 6px;
     color: white;
 }
-.send{  /* styling for the send button */
+
+.send {
+    /* styling for the send button */
     border: 2px solid rgb(0, 0, 0);
     border-radius: 18px 18px 18px 18px;
     font-size: 18px;
@@ -70,33 +98,18 @@
     font-weight: bold;
     transition: 0.3s ease;
 }
-.send:hover{   /* styling for the send button when hovered */
+
+.send:hover {
+    /* styling for the send button when hovered */
     font-weight: bolder;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 251, 0);
     border: 2px solid rgb(255, 251, 0);
 }
-.v-line{
+
+.v-line {
     clear: both;
-    border-top: 2px solid rgb(255, 251, 0);
+    border-top: 2px solid rgb(242, 242, 242);
     margin-bottom: 2px;
 
-}
-.copyright{
-    background-color: rgb(48, 48, 48);
-}
-.copyright h1{
-    color: black;
-    text-align: center;
-    width: fit-content;
-    background-color: rgb(255, 251, 0);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0%;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.copyright h1 a:hover{ /* styling for the editors page */
-    color: blue;
 }

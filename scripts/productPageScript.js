@@ -4,7 +4,7 @@ const newArrival = [
         "title": "Lightweight Headband",
         "discription": "Headbands for Men and Women Sports Hairband Lightweight with 20% discount",
         "price": 4.25,
-        "image": "../images/products/items-images/headbandimg.jpg",
+        "image": "../images/student-one/products/items-images/headbandimg.jpg",
         "rating": 4,
         "hasSize": true,
         "numOfItems": 1
@@ -13,7 +13,7 @@ const newArrival = [
         "title": "Swimset Mask",
         "discription": "Superior quality material, mask with perfect design and Lightweigt and durable",
         "price": 1.5,
-        "image": "../images/products/items-images/watermask.jpg",
+        "image": "../images/student-one/products/items-images/watermask.jpg",
         "rating": 5,
         "hasSize": false,
         "numOfItems": 1
@@ -22,7 +22,7 @@ const newArrival = [
         "title": "Badminton Racket",
         "discription": "Powerfull good tension badminton which suitable for indoor and tournaments",
         "price": 12,
-        "image": "../images/products/items-images/Badminton-racket.png",
+        "image": "../images/student-one/products/items-images/Badminton-racket.png",
         "rating": 3,
         "hasSize": false,
         "numOfItems": 1
@@ -31,7 +31,7 @@ const newArrival = [
         "title": "Mens Running tights",
         "discription": "Designed for your free activities, elastic slim and light without any restricted feeling",
         "price": 15.5,
-        "image": "../images/products/items-images/Mens-running.png",
+        "image": "../images/student-one/products/items-images/Mens-running.png",
         "rating": 5,
         "hasSize": true,
         "numOfItems": 1
@@ -40,7 +40,7 @@ const newArrival = [
         "title": "Bike Phoneholder",
         "discription": "one hand operated device,it is quick and easy to remove your phone from the mount and replace it when you’re done",
         "price": 30.45,
-        "image": "../images/products/items-images/bike-phone-holder.jpg",
+        "image": "../images/student-one/products/items-images/bike-phone-holder.jpg",
         "rating": 5,
         "hasSize": false,
         "numOfItems": 1

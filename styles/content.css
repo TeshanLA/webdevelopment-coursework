@@ -32,6 +32,25 @@
     font-size: larger;
 }
 
+#detail-container {
+    display: flex;
+    align-items: center;
+}
+
+#author-cont,
+#author-img {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+#author-img,
+.author-img {
+    width: 50px;
+    height: 53px;
+    border-radius: 50%;
+}
+
 #author-name {
     font-weight: 700;
     text-align: center;
