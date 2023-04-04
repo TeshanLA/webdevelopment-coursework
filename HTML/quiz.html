@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="nav">
+        <a class="logo" href="main.html"><img class="image-logo" src="../images/logo.jpeg" alt="logo image"></a>
+        <a class="anchor" href="main.html">Home</a>
+        <a class="anchor" href="products.html">Shop</a>
+        <a class="anchor" href="forms.html">Comments</a>
+        <a class="anchor" href="quiz.html">Quiz</a>
+        <a class="anchor" href="siteMap.html">Site Map</a>
+        <a class="anchor" href="thumbnail.html">Gallery</a>
+        <a class="anchor" href="about.html">About us</a>
+    </div>
+    <!-- navbar end -->
+    <video autoplay muted loop id="myVideo">
+        <source src="../images/student-three/quiz/quiz_video.mp4" type="video/mp4">
+    </video>
+
+    <!-- start Quiz button -->
+    <div class="start_button" onclick="myFun()"><button>📖Start Quiz📖 </button></div>
+
+    <!-- Info Box -->
+    <div class="infoBox">
+        <div class="infor-title"><span>🔴🔴🔴 Some Rules of this Quiz 🔴🔴🔴 </span></div>
+        <div class="infor-list">
+            <div class="infor">☪ You will have only <span>6 seconds</span> per all question.</div>
+            <div class="infor">☪ Once you select your answer, it can't be undone.</div>
+            <div class="infor">☪ You can't exit from the Quiz while you're doing.</div>
+            <div class="infor">☪ You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quizBox">
+        <header>
+            <div class="title"> Quiz </div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Box.......... -->
+    <div class="resultBox">
+        <div class="icon">
+            <i class="fas fa-trophy"></i>
+        </div>
+        <div class="completeText">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Restart Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <a href="#top" class="go-top"><span class="material-icons">arrow_circle_up</span></a>
+
+    <div class="footer">
+        <div class="footer-contents">
+            <div class="block-one">
+                <h2>About <span style="color: rgb(255, 0, 0);">ALL STARS</span></h2>
+                <p>All the Gender can be a member of this Club.</p>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">place</span> GP
+                    Square,Bambalapitiya</p>
+                <P><span class="material-icons" style="color: white; margin-right: 5px;">email</span> info@allstars.com
+                </P>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">call</span> +94-702828400</p>
+            </div>
+            <form class="feedback" method="post" action="mailto:danishkar.20210779@iit.ac.lk">
+                <h2>Give your valuable feedback</h2>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emails" required>
+                <textarea class="textarea" rows="4" cols="78" placeholder="Feedback" required></textarea>
+                <input type="submit" value="Send" class="send">
+            </form>
+            <hr class="v-line">
+            <footer class="copyright">
+                <div class="line-1">
+                    Copyright &copy; 2023 ALL STARS (Pvt) Ltd.All Rights Reserved. Developed by <a href="Student3.html"
+                        target="_blank">Tasheela Vidanagamage</a>
+                </div>
+            </footer>
+        </div>
+        <script src="../scripts/questions.js"></script>
+        <script src="../scripts/quiz.js"></script>
+
+</body>
+
+</html>

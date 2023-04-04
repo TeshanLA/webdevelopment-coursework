@@ -2,8 +2,8 @@
 /* font */
 
 body {
-    background-color: #ffffff;
-    background-image: url(../images/forms-back-img.jpg);
+    background-color: black;
+    background-image: url(../images/student-two/);
     background-repeat: no-repeat;
     background-size: contain;
     font-family: "Poppins", sans-serif;
@@ -210,4 +210,13 @@ button {
     border-radius: 13px;
     background-color: yellow;
     font-size: 1.25rem;
+    transition: all ease-in 0.3s;
+}
+
+button:hover {
+    /* styling for the send button when hovered */
+    font-weight: bolder;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 0);
+    border: 2px solid rgb(255, 251, 0);
 }

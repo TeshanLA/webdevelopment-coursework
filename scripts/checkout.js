@@ -116,20 +116,20 @@ if (orderSummary == null) {
 
 selected.addEventListener("change", function (e) {
     if (e.target.value === "SL") {
-        countryImg.src = "../images/checkout/srilanka.png";
+        countryImg.src = "../images/student-one/checkout/srilanka.png";
         calculateTotal(stateOfValues.discount, stateOfValues.deliveryFee, stateOfValues.totalWithoutDisc, stateOfValues.deliveryMethod);
     } else if (e.target.value === "IN") {
-        countryImg.src = "../images/checkout/india.png";
-        calculateTotal(14, 15, stateOfValues.totalWithoutDisc, "Air Shipping");
+        countryImg.src = "../images/student-one/checkout/india.png";
+        calculateTotal(4, 13, stateOfValues.totalWithoutDisc, "Air Shipping");
     } else if (e.target.value === "JP") {
-        countryImg.src = "../images/checkout/japan.png";
-        calculateTotal(17, 20, stateOfValues.totalWithoutDisc, "Air Shipping");
+        countryImg.src = "../images/student-one/checkout/japan.png";
+        calculateTotal(9, 15, stateOfValues.totalWithoutDisc, "Air Shipping");
     } else if (e.target.value === "UK") {
-        countryImg.src = "../images/checkout/uk.png";
-        calculateTotal(20, 25, stateOfValues.totalWithoutDisc, "Air Shipping");
+        countryImg.src = "../images/student-one/checkout/uk.png";
+        calculateTotal(8, 19, stateOfValues.totalWithoutDisc, "Air Shipping");
     } else {
-        countryImg.src = "../images/checkout/united-states.png";
-        calculateTotal(19, 25, stateOfValues.totalWithoutDisc, "Air Shipping");
+        countryImg.src = "../images/student-one/checkout/united-states.png";
+        calculateTotal(19, 20, stateOfValues.totalWithoutDisc, "Air Shipping");
     }
 });
 

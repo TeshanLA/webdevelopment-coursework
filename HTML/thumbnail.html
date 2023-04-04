@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Stars</title>
+    <script src="../scripts/thumbnail.js" defer> </script>
+    <link rel="stylesheet" href="../styles/thumbnail.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/navigation.css">
+    <link rel="icon" type="image/jpeg" href="../images/logo.jpeg">
+</head>
+
+<body id="body">
+    <!-- navbar starts -->
+    <div class="nav">
+        <a class="logo" href="main.html"><img class="image-logo" src="../images/logo.jpeg" alt="logo image"></a>
+        <a class="anchor" href="main.html">Home</a>
+        <a class="anchor" href="Product.html">Shop</a>
+        <a class="anchor" href="forms.html">Comments</a>
+        <a class="anchor" href="Quiz.html">Quiz</a>
+        <a class="anchor" href="SiteMap.html">Site Map</a>
+        <a class="anchor" href="thumbnail.html">Gallery</a>
+        <a class="anchor" href="about.html">About us</a>
+    </div>
+    <!-- navbar ends -->
+
+    <h2 style="color: rgb(22, 19, 19);margin: 10; padding: 0;">Student 4</h2>
+    <div>
+        <img class="capture" src="../images/student-four/new.PNG" alt="Snow">
+        <div class="centered" style="color: #05085b;"><b>Sports</b></div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button type="button1" class="button" onclick="fontchange1()">A</button>
+            <button type="button2" class="button" onclick="fontchange2()">A</button>
+            <button type="button3" class="button" onclick="fontchange3()">A</button>
+            <br /><br />
+
+        </div>
+    </div>
+
+    <div class="changeColor">
+        <form>
+            <label class="label" for="backgroundColor">Background Color: </label>
+            <select name="Background Color" id="backgroundColor" onclick="changeBackColor()">
+                <option value="white">--</option>
+                <option value="#C9COBB">Silver</option>
+                <option value="#91affe">Blue</option>
+                <option value="#7DCEA0">Green</option>
+            </select>
+        </form>
+    </div>
+    <!-- Colour picker -->
+    <div class="color-picker">
+        <label for="color-picker">Color-picker</label><br>
+        <input type="color" onchange="changeColor()" id="color-picker">
+    </div>
+    <div id="container" class="gallery">
+        <div class="box">
+            <img class="image" src="../images/student-four/cricket.jpg" alt="click here"
+                onmouseover="change(this.src);text2()">
+        </div>
+        <div class="box">
+            <img class="image" src="../images/student-four/baseball.jpeg" alt="click here"
+                onmouseover="change(this.src);text1()">
+        </div>
+        <div class="box">
+            <img class="image" src="../images/student-four/football.jpeg" alt="click here"
+                onmouseover="change(this.src);text3()">
+        </div>
+        <div class="box">
+            <img class="image" src="../images/student-four/badminton.jpeg" alt="click here"
+                onmouseover="change(this.src);text4()">
+        </div>
+        <div class="box">
+            <img class="image" src="../images/student-four/basketball.jpeg" alt="click here"
+                onmouseover="change(this.src);text5()">
+        </div>
+        <div class="box">
+            <img class="image" src="../images/student-four/hockey.jpeg" alt="click here"
+                onmouseover="change(this.src);text6()">
+        </div>
+        <div class="box">
+            <img class="image" src="../images/student-four/golf.jpg" alt="click here"
+                onmouseover="change(this.src);text7()">
+        </div>
+        <div class="box">
+            <img class="image" src="../images/student-four/netball.jpg" alt="click here"
+                onmouseover="change(this.src);text8()">
+        </div>
+    </div>
+
+    <div class="mainView">
+        <img class="image" src="../images/student-four/main.png" alt="click here" id="main">
+        <span id="text"> --</span>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footer-contents">
+            <div class="block-one">
+                <h2>About <span style="color: rgb(255, 0, 0);">ALL STARS</span></h2>
+                <p>All the Gender can be a member of this Club.</p>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">place</span> GP
+                    Square,Bambalapitiya</p>
+                <P><span class="material-icons" style="color: white; margin-right: 5px;">email</span>
+                    info@allstars.com
+                </P>
+                <p><span class="material-icons" style="color: white; margin-right: 5px;">call</span> +94-702828400
+                </p>
+            </div>
+            <form class="feedback" method="post" action="mailto:danishkar.20210779@iit.ac.lk">
+                <h2>Give your valuable feedback</h2>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emails" required>
+                <textarea class="textarea" rows="4" cols="78" placeholder="Feedback" required></textarea>
+                <input type="submit" value="Send" class="send">
+            </form>
+            <hr class="v-line">
+            <footer class="copyright">
+                <div class="line-1">
+                    Copyright &copy; 2023 ALL STARS (Pvt) Ltd.All Rights Reserved. Developed by <a
+                        href="Student4.html">Tharupathi
+                        Vihasa</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

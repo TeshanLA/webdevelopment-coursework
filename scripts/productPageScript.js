@@ -44,7 +44,52 @@ const newArrival = [
         "rating": 5,
         "hasSize": false,
         "numOfItems": 1
-    }
+    },
+    {
+        "title": "Cricket Ball",
+        "discription": "A white leather Cricket Ball Suitable for biginners",
+        "price": 5.40,
+        "image": "../images/student-one/products/items-images/leather-cricket-ball.jpg",
+        "rating": 2,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Men's Workot Suits",
+        "discription": "Workout or Sport suit, suitable for any activity including many sports such as soccer",
+        "price": 18.25,
+        "image": "../images/student-one/products/items-images/mens-workout-suit.jpg",
+        "rating": 4,
+        "hasSize": true,
+        "numOfItems": 1
+    },
+    {
+        "title": "Water Proof Backpack",
+        "discription": "Super waterproof backpack, best for outdoor sports, Cycling, Hiking and etc.30L capacity Dual layer design",
+        "price": 3,
+        "image": "../images/student-one/products/items-images/water-proof-backpack.jpg",
+        "rating": 5,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Elastic Neoprene Knee Brace",
+        "discription": "Sport Safety Knee Brace Pads for safety of Joints Muscles .Support Elastic elbow guard protector as a Kneepads protection gear",
+        "price": 1.8,
+        "image": "../images/student-one/products/items-images/knee-socks.jpg",
+        "rating": 3,
+        "hasSize": true,
+        "numOfItems": 1
+    },
+    {
+        "title": "Volleyball Net",
+        "discription": "Standard and professional volleyball net.Also can adjust for tennis and badmonton",
+        "price": 2.25,
+        "image": "../images/student-one/products/items-images/volleyball-net.jpg",
+        "rating": 2,
+        "hasSize": false,
+        "numOfItems": 1
+    },
 ]
 
 const sportswear = [

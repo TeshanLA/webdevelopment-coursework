@@ -30,6 +30,6 @@ students.forEach(function (element, index) {
 //navigate to home
 setTimeout(() => {
     window.location.href = "../HTML/main.html";
-}, 7200);
+}, 7700);
 
 
