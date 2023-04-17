@@ -1,4 +1,4 @@
-//data
+//products items data
 const newArrival = [
     {
         "title": "Lightweight Headband",
@@ -90,6 +90,24 @@ const newArrival = [
         "hasSize": false,
         "numOfItems": 1
     },
+    {
+        "title": "Soccer Shoes",
+        "discription": "High quality soccer shoes for professional playng for, with new design comfortable",
+        "price": 12.65,
+        "image": "../images/student-one/products/items-images/soccerShoes.jpg",
+        "rating": 4,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Cycling Glasses",
+        "discription": "Road cycling safety glasses for men and women,Comfortable eye sight,Cool glasses",
+        "price": 2.05,
+        "image": "../images/student-one/products/items-images/cyclingGlassses.jpg",
+        "rating": 5,
+        "hasSize": false,
+        "numOfItems": 1
+    }
 ]
 
 const sportswear = [
@@ -97,20 +115,159 @@ const sportswear = [
         "title": "Lightweight Headband",
         "discription": "Headbands for Men and Women Sports Hairband Lightweight with 20% discount",
         "price": 4.25,
-        "image": "../images/products/items-images/headbandimg.jpg",
+        "image": "../images/student-one/products/items-images/headbandimg.jpg",
         "rating": 4,
         "hasSize": true,
         "numOfItems": 1
-    }
+    },
+    {
+        "title": "Sportswear Suit",
+        "discription": "Men's sportwear suit mostly suitable with workout, Jogging and as arunning tracksuit",
+        "price": 18.28,
+        "image": "../images/student-one/products/items-images/mensSportTight.jpg",
+        "rating": 5,
+        "hasSize": true,
+        "numOfItems": 1
+    },
+    {
+        "title": "Tabletennis Suit",
+        "discription": "Quick dring comfortable, table tennis shirt for men and women,polyester made",
+        "price": 12.325,
+        "image": "../images/student-one/products/items-images/tableTennisSuitQuick.jpg",
+        "rating": 5,
+        "hasSize": true,
+        "numOfItems": 1
+    },
+    {
+        "title": "Soccer Shoes",
+        "discription": "Extra comfortable soccer shoes for adults and kids.rubber made with long spikes",
+        "price": 22,
+        "image": "../images/student-one/products/items-images/soccerShoesWhite.jpg",
+        "rating": 4,
+        "hasSize": true,
+        "numOfItems": 1
+    },
+    {
+        "title": "Running Shoes",
+        "discription": "Running shoes for men , Good comfort breathable outdoor shoes",
+        "price": 12,
+        "image": "../images/student-one/products/items-images/runningShoesS.jpg",
+        "rating": 4,
+        "hasSize": true,
+        "numOfItems": 1
+    },
 ]
 
+const Eqipments = [
+    {
+        "title": "Football Plyester",
+        "discription": "New professional football for practice or playing Suitabl for 11 side standard competition",
+        "price": 24,
+        "image": "../images/student-one/products/items-images/football1B.jpg",
+        "rating": 4,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Training Soccer Ball",
+        "discription": "The quality of our ball is very good. It is fused of soft PU leather and the liner is rubber bladder. And all soccer balls on this link are Thermally-bonded soccer balls.",
+        "price": 18,
+        "image": "../images/student-one/products/items-images/footBall2B.jpg",
+        "rating": 4,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Base Ball",
+        "discription": " brand new and high qualityUsing high-quality PU material, foam liner fillingVery soft, elastic and durable",
+        "price": 4,
+        "image": "../images/student-one/products/items-images/baseBall1.jpeg",
+        "rating": 4,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Base Ball Bat",
+        "discription": "Lightweight construction for increased bat speed, It is ideal for recreational play, routine practice or even professional play.Convenient design:Rubber grip antiskid absorbs shock and lightweight design with slender handle.",
+        "price": 14.5,
+        "image": "../images/student-one/products/items-images/bBall bat.jpg",
+        "rating": 4,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Cricket Bat",
+        "discription": "Outdoor Sport Cricket Bat Made Hand Crafted Cricket Bats For Adults And Kids",
+        "price": 24,
+        "image": "../images/student-one/products/items-images/cricketBat.jpg",
+        "rating": 5,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+];
 
+const teamSport = [{
+    "title": "Football Jersey for Team",
+    "discription": "Wholesale Custom Cheap Sublimation Adults Soccer Uniforms Club Team Soccer Jerseys Breathable Football Jersey Sets For Men",
+    "price": 50,
+    "image": "../images/student-one/products/items-images/jersyTeam.jpg",
+    "rating": 5,
+    "hasSize": false,
+    "numOfItems": 1
+},
+{
+    "title": "Cricket Jersey",
+    "discription": "2022 SOUTH AFRICA PROTEAS HOME CRICKET JERSEY 2022/2023 South Africa",
+    "price": 15,
+    "image": "../images/student-one/products/items-images/crickJersy.webp",
+    "rating": 5,
+    "hasSize": false,
+    "numOfItems": 1
+}];
+
+const safetyEquips = [
+    {
+        "title": "Cricket Helmet",
+        "discription": "Safety Helmet for playing cricket training",
+        "price": 14,
+        "image": "../images/student-one/products/items-images/crickHelmet.jpg",
+        "rating": 5,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Cricket Knee Pads",
+        "discription": "High quality knee pads for playing cricket ,best quality",
+        "price": 13,
+        "image": "../images/student-one/products/items-images/crickPadImage.jpg",
+        "rating": 5,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+    {
+        "title": "Football Shoulder Pads",
+        "discription": "High quality shoulder pads for american football, suitable for standard matches",
+        "price": 13,
+        "image": "../images/student-one/products/items-images/sholderpad.jpg",
+        "rating": 5,
+        "hasSize": false,
+        "numOfItems": 1
+    },
+];
+
+
+
+
+//array for store shopping cart items
 const shoppingCartItems = [];
+
+//keep data of shoppinCart number of items and total
 const cartDetails = {
     "items": 0,
     "total": 0
 };
 
+//selected category
 const pageDetails = {
     "selectedPage": 0
 }
@@ -128,6 +285,7 @@ const numOfItems = document.querySelector(".items");
 const totAmount = document.querySelector(".total-amont");
 
 
+// load data to the page
 function loadData(array) {
     array.forEach(function (iterator, i) {
         //load items
@@ -398,6 +556,9 @@ categories.forEach(function (element, i) {
         element.addEventListener("click", function () {
             if (!(pageDetails.selectedPage === 2)) {
                 console.log("Eqipments");
+                let items = document.querySelectorAll(".item");
+                items.forEach(node => { node.remove(); });
+                loadData(Eqipments);
                 pageDetails.selectedPage = 2;
             }
         });
@@ -407,7 +568,7 @@ categories.forEach(function (element, i) {
                 console.log("teamsports");
                 let items = document.querySelectorAll(".item");
                 items.forEach(node => { node.remove(); });
-                loadData(newArrival);
+                loadData(teamSport);
                 pageDetails.selectedPage = 3;
             }
         });
@@ -417,7 +578,7 @@ categories.forEach(function (element, i) {
                 console.log("safety");
                 let items = document.querySelectorAll(".item");
                 items.forEach(node => { node.remove(); });
-                loadData(newArrival);
+                loadData(safetyEquips);
                 pageDetails.selectedPage = 4;
             }
         });

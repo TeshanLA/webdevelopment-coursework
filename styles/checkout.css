@@ -273,7 +273,7 @@ hr {
     margin-left: 20px;
 }
 
-#delivery {
+.delivery {
     display: inline-block;
     font-weight: 900;
 }

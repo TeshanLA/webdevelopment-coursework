@@ -113,7 +113,7 @@ if (orderSummary == null) {
 }
 
 
-
+//change country flags in form and discount rates and shipping charge
 selected.addEventListener("change", function (e) {
     if (e.target.value === "SL") {
         countryImg.src = "../images/student-one/checkout/srilanka.png";
